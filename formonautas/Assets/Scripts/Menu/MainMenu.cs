@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject selecionarFaseMenu;
     [SerializeField] private GameObject relatorioMenu;
     [SerializeField] private GameObject relatorioDetalhado;
+    [SerializeField] private GameObject emailMenu;
     [SerializeField] private GameObject creditosMenu;
 
     public void Awake()
@@ -18,6 +19,7 @@ public class MainMenu : MonoBehaviour
         selecionarFaseMenu.SetActive(false);
         relatorioMenu.SetActive(false);
         relatorioDetalhado.SetActive(false);
+        emailMenu.SetActive(false);
         creditosMenu.SetActive(false);
     }
 
@@ -28,6 +30,7 @@ public class MainMenu : MonoBehaviour
         selecionarFaseMenu.SetActive(false);
         relatorioMenu.SetActive(false);
         relatorioDetalhado.SetActive(false);
+        emailMenu.SetActive(false);
         creditosMenu.SetActive(false);
 
         menuMostrar.SetActive(true);
