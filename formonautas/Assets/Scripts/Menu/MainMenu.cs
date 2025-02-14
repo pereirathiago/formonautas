@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] private GameObject loginMenu;
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject selecionarFaseMenu;
     [SerializeField] private GameObject relatorioMenu;
@@ -12,7 +13,8 @@ public class MainMenu : MonoBehaviour
 
     public void Awake()
     {
-        mainMenu.SetActive(true);
+        loginMenu.SetActive(true);
+        mainMenu.SetActive(false);
         selecionarFaseMenu.SetActive(false);
         relatorioMenu.SetActive(false);
         relatorioDetalhado.SetActive(false);
@@ -21,6 +23,7 @@ public class MainMenu : MonoBehaviour
 
     public void TrocarMenu(GameObject menuMostrar)
     {
+        loginMenu.SetActive(false);
         mainMenu.SetActive(false);
         selecionarFaseMenu.SetActive(false);
         relatorioMenu.SetActive(false);
