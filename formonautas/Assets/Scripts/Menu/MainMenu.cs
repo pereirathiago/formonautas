@@ -14,8 +14,8 @@ public class MainMenu : MonoBehaviour
 
     public void Awake()
     {
-        loginMenu.SetActive(true);
-        mainMenu.SetActive(false);
+        loginMenu.SetActive(false);
+        mainMenu.SetActive(true);
         selecionarFaseMenu.SetActive(false);
         relatorioMenu.SetActive(false);
         relatorioDetalhado.SetActive(false);
@@ -39,5 +39,10 @@ public class MainMenu : MonoBehaviour
     public void Sair()
     {
         Application.Quit();
+    }
+
+    public void TrocarScene(string scene)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
     }
 }

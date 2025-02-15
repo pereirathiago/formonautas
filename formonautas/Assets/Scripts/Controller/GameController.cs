@@ -8,12 +8,9 @@ public class GameController : MonoBehaviour
 {
     public static GameController instance;
 
-    private void Awake()
+    private void Update()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
+        
     }
 
     public void TrocarScene(string scene)

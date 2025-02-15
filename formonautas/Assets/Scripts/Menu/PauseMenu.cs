@@ -32,6 +32,16 @@ public class PauseMenu : MonoBehaviour
         pauseBtnUI.SetActive(true);
         Time.timeScale = 1f;
         GameIsPaused = false;
+
+        GameObject professorAudioObj = GameObject.FindGameObjectWithTag("ProfessorAudio");
+        if (professorAudioObj != null)
+        {
+            AudioSource audioSource = professorAudioObj.GetComponent<AudioSource>();
+            if (audioSource != null && audioSource.clip != null)
+            {
+                audioSource.UnPause();
+            }
+        }
     }
 
     public void Pause()
@@ -40,6 +50,16 @@ public class PauseMenu : MonoBehaviour
         pauseBtnUI.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
+
+        GameObject professorAudioObj = GameObject.FindGameObjectWithTag("ProfessorAudio");
+        if (professorAudioObj != null)
+        {
+            AudioSource audioSource = professorAudioObj.GetComponent<AudioSource>();
+            if (audioSource != null && audioSource.isPlaying)
+            {
+                audioSource.Pause();
+            }
+        }
     }
 
     public void LoadMenu()
