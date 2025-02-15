@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 6086796622061183383}
   - component: {fileID: 981301198405475545}
   - component: {fileID: 3881055666757354789}
+  - component: {fileID: 8398481828171432803}
   m_Layer: 5
   m_Name: Sucesso
   m_TagString: Untagged
@@ -266,6 +267,26 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8398481828171432803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421462748348362026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bccf74a77cd9e534e81efd3080c3c558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  estrelas:
+  - {fileID: 109956034725311153}
+  - {fileID: 215968365203668176}
+  - {fileID: 8040470868436736680}
+  audioClip3Estrelas: {fileID: 8300000, guid: e7a9b34dd431e384cb6e3f1fac7224a6, type: 3}
+  audioClip2Estrelas: {fileID: 8300000, guid: 459f0b6f2d9410541a4bedb70eba92f4, type: 3}
+  audioClip1Estrela: {fileID: 8300000, guid: cfbdda29afbed1e4f9596cabdc727ff5, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &1980618010212029837
 GameObject:
   m_ObjectHideFlags: 0
